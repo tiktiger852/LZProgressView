@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LZProgressView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *colors = @[
+                        [UIColor purpleColor],
+                        [UIColor orangeColor],
+                        [UIColor cyanColor],
+                        [UIColor redColor],
+                        [UIColor greenColor],
+                        [UIColor blueColor],
+                        [UIColor yellowColor]
+                        ];
+    LZProgressView *progressView = [[LZProgressView alloc] initWithFrame:CGRectMake(0, 0, 26, 26) andLineWidth:3.0 andLineColor:colors];
+    progressView.center = self.view.center;
+    [self.view addSubview:progressView];
 }
 
 - (void)didReceiveMemoryWarning {

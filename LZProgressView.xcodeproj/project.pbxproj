@@ -13,6 +13,7 @@
 		04B7D75A1BDF6B190010CB82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B7D7581BDF6B190010CB82 /* Main.storyboard */; };
 		04B7D75C1BDF6B190010CB82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B7D75B1BDF6B190010CB82 /* Assets.xcassets */; };
 		04B7D75F1BDF6B190010CB82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B7D75D1BDF6B190010CB82 /* LaunchScreen.storyboard */; };
+		04EF0A2F1BE0C64600467A79 /* LZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EF0A2E1BE0C64600467A79 /* LZProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		04B7D75B1BDF6B190010CB82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B7D75E1BDF6B190010CB82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B7D7601BDF6B190010CB82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04EF0A2D1BE0C64600467A79 /* LZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZProgressView.h; sourceTree = "<group>"; };
+		04EF0A2E1BE0C64600467A79 /* LZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		04B7D74E1BDF6B190010CB82 /* LZProgressView */ = {
 			isa = PBXGroup;
 			children = (
+				04B7D7661BDF80910010CB82 /* LZProgressView */,
 				04B7D7521BDF6B190010CB82 /* AppDelegate.h */,
 				04B7D7531BDF6B190010CB82 /* AppDelegate.m */,
 				04B7D7551BDF6B190010CB82 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				04B7D7501BDF6B190010CB82 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		04B7D7661BDF80910010CB82 /* LZProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				04EF0A2D1BE0C64600467A79 /* LZProgressView.h */,
+				04EF0A2E1BE0C64600467A79 /* LZProgressView.m */,
+			);
+			path = LZProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B7D7571BDF6B190010CB82 /* ViewController.m in Sources */,
+				04EF0A2F1BE0C64600467A79 /* LZProgressView.m in Sources */,
 				04B7D7541BDF6B190010CB82 /* AppDelegate.m in Sources */,
 				04B7D7511BDF6B190010CB82 /* main.m in Sources */,
 			);
@@ -263,6 +277,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LZProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yan.LZProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LZProgressView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yan.LZProgressView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +315,7 @@
 				04B7D7651BDF6B190010CB82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
